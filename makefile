@@ -2,7 +2,6 @@ OBJS = Drone_Server.o Drone_Interface.o  APM_Interface.o ServerSelect.o Serial_P
 PATH_OBJS = objects
 #PATH_EXE = /home/pi/Escritorio/DRONE/bin
 PATH_EXE = /opt/goac/GOAC/TREX/bin
-PATH_SERVER = /opt/goac/GOAC/TREX/extra/ogr/Server
 CFLAGS = -c 
 FLAGS = -lpthread -o 
 
