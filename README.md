@@ -13,6 +13,23 @@ $ cd Raptor-master
 $ make
 ```
 
+### Run it
+```sh
+$ .\Drone_Interface [optional] -S [mandatory] [Option 1] -p PORT_SERVER [Option 2] -su SERVER_UART -sb BAUD_SERVER [mandatory] -u UART_APM -b BAUD_APM
+````
+-- [Optional]
+- -S: enable or disable the Simulation Mode. 
+
+-- [Mandatory]
+- -p: from [Option 1] to indicate the port on which the server will listen. It is used when the server is executed in a local pc.
+- -su: from [Option 2] to indicate the UART on which the server will connect with OGR. It is used for the communication between the functional layer and the deliberative layer.
+- -sb: from [Option 2] to indicate the baudrate of the uart.
+- -u: the uart port on which the Drone Server will connect with the APM Interface.
+- -b: the baudrate of the UART.
+
+- [Option 1]: This option will connect through TCP/IP
+- [Option 2]: This option will connect through Serial
+    
 ## Video
 - https://www.youtube.com/watch?v=yryqd7gPUno
 
