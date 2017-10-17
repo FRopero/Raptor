@@ -5,11 +5,21 @@ The files commited in this repository are referred to the functional layer of th
 
 ![Raptor](/extra/RaptorArchitecture.PNG)
 
-## How to get it
+## How to get it in Linux Systems
 ### Build it
-- Before to build it, you have to modify the variable ```PATH_EXE``` in the makefile. This is the location where the executable is going to be allocated. Then, you must follow the next steps:
+- Before to build it, you have to check the next points:
+
+* Install the mavlink protocol in the project
 ```sh
-$ cd Raptor-master
+$ mkdir raptor0.1
+$ mv mavlink raptor0.1\ 
+```
+
+* To modify the variable ```PATH_EXE``` in the makefile. This is the location where the executable is going to be allocated. 
+
+- Then, you must follow the next steps:
+```sh
+$ cd raptor
 $ make
 ```
 
